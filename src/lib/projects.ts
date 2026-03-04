@@ -30,14 +30,14 @@ export const projects: Project[] = [
     title: "AI-Driven Design Systems & Automated Prototyping",
     subtitle: "Bridging the gap between Figma, Notion, and Production Code",
     description:
-      "Pioneered an AI-powered workflow that connects design tokens in Figma to living documentation in Notion and production-ready code — turning weeks of manual sync into real-time automation.",
+      "Pioneered an AI-powered workflow that connects design tokens in Figma to living documentation in Notion and production-ready code , turning weeks of manual sync into real-time automation.",
     category: "AI",
     type: "featured",
     image: "/images/project-1.png",
     headerImage: "/images/project-1_header.png",
     caseStudy: {
       overview:
-        "Empowering Designers and Product Managers to generate high-fidelity, functional prototypes directly in code — and enabling designers to handle minor UI adjustments independently via Pull Requests.",
+        "Empowering Designers and Product Managers to generate high-fidelity, functional prototypes directly in code , and enabling designers to handle minor UI adjustments independently via Pull Requests.",
       role: "Senior Design Engineer / Product Designer",
       duration: "2.5 months",
       tools: ["Figma", "Claude AI", "React", "Tailwind", "Notion"],
@@ -51,12 +51,13 @@ export const projects: Project[] = [
           title: "The Infrastructure: Component & Token Parity",
           content:
             "To achieve this, we established a comprehensive Design System in Figma with strict 1:1 parity between Figma components/tokens and our frontend library. By aligning naming conventions across both environments, we ensured that any design intent could be programmatically mapped to its coded counterpart.",
-          image: "/images/project-1_inside image 1.png",
+          image: "/images/project-1_inside image 0.png",
         },
         {
           title: "The Solution: LLM Integration & Workflow Automation",
           content:
             "Working closely with the engineering team, we integrated our proprietary frontend library with Claude (LLM) and connected the stack to Notion.\n\n• Autonomous Prototyping: By feeding product requirements directly from Notion into Claude, the system generates functional prototypes that strictly adhere to our Design System constraints.\n\n• Conversational UI Iteration: Designers can interact with Claude to perform real-time UI adjustments. Since the LLM is aware of the Design System's logic, it can suggest and implement changes that remain consistent with the brand's visual language.\n\n• Direct Implementation: This workflow allows designers to initiate PRs for minor visual changes, significantly reducing the engineering overhead for styling tasks.",
+          image: "/images/project-1_inside image 1.png",
         },
         {
           title: "The Outcome",
@@ -92,23 +93,41 @@ export const projects: Project[] = [
           title: "The Challenge: The Context-Switching Tax",
           content:
             "Security analysts are often overwhelmed by thousands of vulnerabilities (CVEs) across hundreds of assets. The main challenge was to consolidate data from multiple scanners, normalize it, and provide a clear prioritization path without the user losing their \"mental state\" while diving deep into technical details.",
+          image: "/images/project-2_inside image 0.png",
         },
         {
           title: "The Solution: Multi-Layered, Context-Aware Navigation",
           content:
-            "To solve the friction of deep-diving into data, I implemented a Stacked Drawer Architecture. This allows users to drill down from a high-level dashboard into specific technical layers without ever leaving their initial starting point.\n\n• Stacked Interaction Model: Users can navigate from a Dashboard Widget → Exposure Finding (Drawer 1) → Vulnerability List (Drawer 2) → Individual CVE Details (Drawer 3). Each layer slides over the previous one, maintaining a visible breadcrumb of the investigation path.\n\n• The CVE Risk Breakdown (Funnel): I redesigned the core funnel to shift focus from raw asset counts to CVE-centric risk factors. By correlating CVSS scores with mitigating factors (like missing EDR coverage) and threat intelligence (CISA KEV), we created a prescriptive path for remediation.\n\n• Dynamic Inventory: A high-density data table that supports complex filtering and saved views, allowing teams to isolate critical business risks, such as \"CVEs exploited in known campaigns\" or \"CISA catalog vulnerabilities.\"",
-          image: "/images/project-2_inside image 1.gif",
+            "To solve the friction of deep-diving into data, I implemented a Stacked Drawer Architecture. This allows users to drill down from a high-level dashboard into specific technical layers without ever leaving their initial starting point.",
+          image: "/images/project-2_inside image 01.png",
+        },
+        {
+          title: "",
+          content: "",
+          image: "/images/project-2_inside image 03.png",
+        },
+        {
+          title: "",
+          content:
+            "• Stacked Interaction Model: Users can navigate from a Dashboard Widget → Exposure Finding (Drawer 1) → Vulnerability List (Drawer 2) → Individual CVE Details (Drawer 3). Each layer slides over the previous one, maintaining a visible breadcrumb of the investigation path.",
+          image: "/images/project-2_inside image2.png",
+        },
+        {
+          title: "",
+          content:
+            "• The CVE Risk Breakdown (Funnel): I redesigned the core funnel to shift focus from raw asset counts to CVE-centric risk factors. By correlating CVSS scores with mitigating factors (like missing EDR coverage) and threat intelligence (CISA KEV), we created a prescriptive path for remediation.\n\n• Dynamic Inventory: A high-density data table that supports complex filtering and saved views, allowing teams to isolate critical business risks, such as \"CVEs exploited in known campaigns\" or \"CISA catalog vulnerabilities.\"",
         },
         {
           title: "Technical Deep Dive: Normalization & Prioritization",
           content:
             "Working closely with the PM and Engineering, we defined the logic for the \"Top Vulnerability Exposure Findings\". This required a deep understanding of how different scanners (Tenable, Rapid7, etc.) report data and how to normalize these disparate sources into a single, cohesive severity scale.",
+          image: "/images/project-2_inside image 02.png",
         },
         {
           title: "Outcome",
           content:
             "• Reduced Cognitive Load: The layered drawer system eliminated the need for browser tabs/back-button navigation, keeping analysts focused on the task.\n\n• Actionable Visibility: Successfully transformed a \"data dump\" of vulnerabilities into a prioritized remediation plan, directly tied to business assets and active threat campaigns.",
-          image: "/images/project-2_inside image2.png",
+          image: "/images/project-2_inside image 1.gif",
         },
       ],
     },
@@ -125,7 +144,7 @@ export const projects: Project[] = [
     headerImage: "/images/project-3_inside image1.png",
     caseStudy: {
       overview:
-        "Following the acquisition of DeepCode (a SAST engine), the goal was to integrate its advanced static analysis capabilities into the Snyk platform — translating complex, AI-generated security findings into a UI that felt native to the developer's existing workflow.",
+        "Following the acquisition of DeepCode (a SAST engine), the goal was to integrate its advanced static analysis capabilities into the Snyk platform, translating complex, AI-generated security findings into a UI that felt native to the developer's existing workflow.",
       role: "",
       duration: "",
       tools: [],
@@ -169,7 +188,7 @@ export const projects: Project[] = [
     headerImage: "/images/project-4_inside image1.png",
     caseStudy: {
       overview:
-        "Security leaders (CISOs) and program managers often face \"data silos\" — multiple security tools generating vast amounts of raw data without a centralized, actionable view. The manual process of gathering, correlating, and analyzing this data to report on risk and operational efficiency was a significant friction point.",
+        "Security leaders (CISOs) and program managers often face \"data silos\", multiple security tools generating vast amounts of raw data without a centralized, actionable view. The manual process of gathering, correlating, and analyzing this data to report on risk and operational efficiency was a significant friction point.",
       role: "",
       duration: "2.5 months (MVP to v1)",
       tools: ["Figma", "Miro"],
@@ -177,14 +196,20 @@ export const projects: Project[] = [
         {
           title: "The Challenge: Data Fragmentation",
           content:
-            "Security leaders (CISOs) and program managers often face \"data silos\" — multiple security tools generating vast amounts of raw data without a centralized, actionable view. The manual process of gathering, correlating, and analyzing this data to report on risk and operational efficiency was a significant friction point.",
+            "Security leaders (CISOs) and program managers often face \"data silos\", multiple security tools generating vast amounts of raw data without a centralized, actionable view. The manual process of gathering, correlating, and analyzing this data to report on risk and operational efficiency was a significant friction point.",
           imagePair: ["/images/project-4_inside image4.png", "/images/project-4_inside image5.png"],
         },
         {
           title: "The Solution: A Modular Metric Ecosystem",
           content:
-            "I designed a scalable dashboard system that allows users to move from high-level summaries to deep-dive technical analysis within a single environment.\n\n• OOTB Metrics Library: Developed a sidebar interface where users can browse and search a library of pre-built (Out-of-the-Box) metrics, categorized by tool and security domain.\n\n• Dynamic Customization: Implemented a workflow allowing users to drag-and-drop metrics into personal dashboards, edit titles/descriptions, and choose from a set of optimized visualizations (Bar, Line, Pie).\n\n• Closing the Operational Loop: Every metric is designed with \"Contextual Navigation\" — clicking a data point takes the user directly to the relevant filtered asset or vulnerability page, bridging the gap between reporting and remediation.\n\n• Executive Readiness: The system supports on-demand PDF exports, enabling CISOs to communicate security trends and SLA status to boards and peers effectively.",
+            "I designed a scalable dashboard system that allows users to move from high-level summaries to deep-dive technical analysis within a single environment.\n\n• OOTB Metrics Library: Developed a sidebar interface where users can browse and search a library of pre-built (Out-of-the-Box) metrics, categorized by tool and security domain.",
           image: "/images/project-4_inside image2.gif",
+        },
+        {
+          title: "",
+          content:
+            "• Dynamic Customization: Implemented a workflow allowing users to drag-and-drop metrics into personal dashboards, edit titles/descriptions, and choose from a set of optimized visualizations (Bar, Line, Pie).\n\n• Closing the Operational Loop: Every metric is designed with \"Contextual Navigation\", clicking a data point takes the user directly to the relevant filtered asset or vulnerability page, bridging the gap between reporting and remediation.\n\n• Executive Readiness: The system supports on-demand PDF exports, enabling CISOs to communicate security trends and SLA status to boards and peers effectively.",
+          imagePair: ["/images/project-4_inside image6.png", "/images/project-4_inside image7.png"],
         },
         {
           title: "The Outcome",
@@ -287,14 +312,14 @@ export const projects: Project[] = [
     title: "Building This Portfolio with Claude AI",
     subtitle: "A designer-AI collaboration from Figma to deployment",
     description:
-      "A meta case study on how this very portfolio was designed in Figma and built collaboratively with Claude AI — from pixel-perfect components to a live Next.js site, shipped in days instead of weeks.",
+      "A meta case study on how this very portfolio was designed in Figma and built collaboratively with Claude AI, from pixel-perfect components to a live Next.js site, shipped in days instead of weeks.",
     category: "AI",
     type: "grid",
     image: "/images/project-7_header.png",
     headerImage: "/images/project-7_inside image1.png",
     caseStudy: {
       overview:
-        "This portfolio itself is a case study in AI-assisted design-to-code. Starting from a polished Figma file, I partnered with Claude AI to translate every component, interaction, and visual detail into a production-ready Next.js application — iterating in real time through conversation.",
+        "This portfolio itself is a case study in AI-assisted design-to-code. Starting from a polished Figma file, I partnered with Claude AI to translate every component, interaction, and visual detail into a production-ready Next.js application, iterating in real time through conversation.",
       role: "Designer & Creative Director",
       duration: "1 week",
       tools: ["Figma", "Claude AI", "Next.js", "Tailwind CSS", "Framer Motion", "GitHub"],
@@ -302,17 +327,18 @@ export const projects: Project[] = [
         {
           title: "The Challenge: From Design to Live Site, Fast",
           content:
-            "I had a fully designed portfolio in Figma — layout, typography, color system, interactions — but limited time and bandwidth to hand-code it from scratch. Traditional workflows would mean weeks of development, or compromising on fidelity by using a no-code builder. I wanted pixel-perfect output, real interactivity (animated drawers, lightboxes, dark/light mode), and full control over the code — without writing every line myself.",
+            "I had a fully designed portfolio in Figma, layout, typography, color system, interactions, but limited time and bandwidth to hand-code it from scratch. Traditional workflows would mean weeks of development, or compromising on fidelity by using a no-code builder. I wanted pixel-perfect output, real interactivity (animated drawers, lightboxes, dark/light mode), and full control over the code, without writing every line myself.",
         },
         {
           title: "The Process: Designing with AI as a Partner",
           content:
-            "The workflow was surprisingly natural. I shared my Figma designs with Claude and described the structure — component by component, section by section. Claude generated the Next.js code using Tailwind CSS and Framer Motion, matching the design system I'd defined. From there, it became a tight feedback loop: I'd review the output, flag misalignments or missing details, upload screenshots, and Claude would iterate instantly. We refined hover states, scroll behaviors, responsive breakpoints, image placements, and even subtle touches like gradient animations and tooltip micro-interactions. Every case study you see on this site — the images, the side-by-side layouts, the GIF embeds — was placed and tuned through this conversational process.",
+            "The workflow was surprisingly natural. I shared my Figma designs with Claude and described the structure, component by component, section by section. Claude generated the Next.js code using Tailwind CSS and Framer Motion, matching the design system I'd defined. From there, it became a tight feedback loop: I'd review the output, flag misalignments or missing details, upload screenshots, and Claude would iterate instantly. We refined hover states, scroll behaviors, responsive breakpoints, image placements, and even subtle touches like gradient animations and tooltip micro-interactions. Every case study you see on this site, the images, the side-by-side layouts, the GIF embeds, was placed and tuned through this conversational process.",
         },
         {
           title: "The Outcome: Shipped in Days, Not Weeks",
           content:
-            "The result is the site you're browsing right now — a fully responsive, dark/light themed portfolio with animated case study drawers, image lightboxes, and smooth transitions. It was pushed to GitHub and deployed in a fraction of the time a traditional build would take. More importantly, the process proved something I believe deeply: AI doesn't replace design thinking — it amplifies it. I stayed in creative control the entire time, making every visual and UX decision, while Claude handled the translation to code. It's the kind of workflow I think more designers will adopt — and one I'm excited to keep pushing forward.",
+            "The result is the site you're browsing right now, a fully responsive, dark/light themed portfolio with animated case study drawers, image lightboxes, and smooth transitions. It was pushed to GitHub and deployed in a fraction of the time a traditional build would take. More importantly, the process proved something I believe deeply: AI doesn't replace design thinking, it amplifies it. I stayed in creative control the entire time, making every visual and UX decision, while Claude handled the translation to code. It's the kind of workflow I think more designers will adopt, and one I'm excited to keep pushing forward.",
+          image: "/images/project-7_inside image2.png",
         },
       ],
       meta: [
